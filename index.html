@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>燿威 / BLACK GROW BERRY</title>
+<meta name="description" content="BLACK GROW BERRY ギター 燿威（しょうい）のリンクまとめ。ライブ情報・チェキ予約・SNS。">
+<meta property="og:title" content="燿威 / BLACK GROW BERRY">
+<meta property="og:description" content="ライブ情報・チェキ予約・SNSはこちら">
+<meta property="og:type" content="website">
+<meta property="og:image" content="icon.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0a090c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a090c;
+    --card:rgba(255,255,255,.035);
+    --card-hover:rgba(255,255,255,.07);
+    --line:rgba(255,255,255,.09);
+    --text:#eeeaf0;
+    --sub:#9a93a1;
+    --berry:#b0335f;
+    --berry-deep:#5c1430;
+    --berry-glow:rgba(176,51,95,.35);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{background:var(--bg)}
+  body{
+    position:relative;
+    min-height:100vh;
+    color:var(--text);
+    font-family:"Zen Kaku Gothic New",system-ui,sans-serif;
+    background:
+      radial-gradient(ellipse 80% 45% at 50% -5%, rgba(120,24,62,.55), transparent 70%),
+      radial-gradient(ellipse 60% 40% at 50% 110%, rgba(70,14,40,.45), transparent 70%),
+      var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  /* うっすらノイズ */
+  body::before{
+    content:"";position:absolute;inset:0;pointer-events:none;opacity:.06;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .wrap{position:relative;max-width:440px;margin:0 auto;padding:56px 20px 40px}
+
+  /* プロフィール */
+  .profile{text-align:center;margin-bottom:36px}
+  .avatar{
+    width:112px;height:112px;margin:0 auto 18px;border-radius:50%;
+    padding:3px;background:conic-gradient(from 200deg,var(--berry),#2a0b18,var(--berry),#e8a2bd,var(--berry));
+    box-shadow:0 0 40px var(--berry-glow);
+  }
+  .avatar-inner{
+    width:100%;height:100%;border-radius:50%;overflow:hidden;background:#140d12;
+    display:flex;align-items:center;justify-content:center;
+    border:3px solid var(--bg);
+  }
+  .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+  .avatar .mono{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:300;font-size:34px;color:#f3d6e1}
+  .name{
+    font-family:"Zen Kaku Gothic New",sans-serif;font-weight:300;font-size:40px;letter-spacing:.32em;text-indent:.32em;line-height:1.2;
+    background:linear-gradient(180deg,#ffffff 0%,#f6e4eb 60%,#d98aa8 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    filter:drop-shadow(0 0 14px rgba(176,51,95,.35));
+  }
+  .yomi{font-size:12px;color:var(--sub);letter-spacing:.3em;margin-top:4px}
+  .band{
+    display:inline-flex;align-items:center;gap:10px;margin-top:12px;
+    font-family:"Montserrat",sans-serif;font-weight:700;font-size:12px;letter-spacing:.32em;color:#e3b3c6;
+  }
+  .band::before,.band::after{content:"";width:22px;height:1px;background:linear-gradient(90deg,transparent,var(--berry))}
+  .band::after{transform:scaleX(-1)}
+  .bio{margin-top:16px;font-size:13.5px;line-height:1.9;color:#cfc8d4}
+
+  /* 見出し */
+  .sec{margin-top:30px}
+  .sec-title{
+    display:flex;align-items:center;gap:12px;margin-bottom:12px;
+    font-family:"Montserrat",sans-serif;font-size:11px;font-weight:700;letter-spacing:.4em;color:var(--sub);
+  }
+  .sec-title::after{content:"";flex:1;height:1px;background:var(--line)}
+
+  /* ボタン */
+  .links{display:flex;flex-direction:column;gap:10px}
+  a.btn{
+    position:relative;display:flex;align-items:center;gap:14px;
+    padding:15px 16px;border-radius:14px;
+    background:var(--card);border:1px solid var(--line);
+    color:var(--text);text-decoration:none;
+    transition:background .2s,border-color .2s,transform .15s;
+  }
+  a.btn:hover{background:var(--card-hover);border-color:rgba(176,51,95,.5)}
+  a.btn:active{transform:scale(.985)}
+  .ico{flex:none;width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.06)}
+  .ico svg{width:18px;height:18px;fill:currentColor}
+  .label{flex:1;min-width:0}
+  .label b{display:block;font-weight:700;font-size:15px}
+  .label small{display:block;font-size:12px;color:var(--sub);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .arrow{flex:none;color:var(--sub);font-size:14px}
+
+  /* ライブ */
+  .live{display:flex;flex-direction:column;gap:10px}
+  .live a.btn{padding:14px 16px}
+  .date{
+    flex:none;width:56px;text-align:center;border-right:1px solid var(--line);padding-right:12px;
+  }
+  .date .md{font-family:"Montserrat",sans-serif;font-weight:700;font-size:19px;line-height:1.1}
+  .date .wd{font-size:11px;color:var(--sub);margin-top:3px;letter-spacing:.1em}
+  .live a.next{
+    border:1px solid transparent;
+    background:
+      linear-gradient(135deg,rgba(92,20,48,.75),rgba(30,10,20,.85)) padding-box,
+      linear-gradient(135deg,#e07aa0,var(--berry),#3a0d1f) border-box;
+    box-shadow:0 10px 30px -12px var(--berry-glow);
+    padding:18px 16px;
+  }
+  .live a.next .md{font-size:22px}
+  .badge{
+    display:inline-block;margin-bottom:5px;padding:2px 8px;border-radius:99px;
+    font-family:"Montserrat",sans-serif;font-size:10px;font-weight:700;letter-spacing:.2em;
+    background:var(--berry);color:#fff;
+  }
+  .badge.days{background:rgba(255,255,255,.12);margin-left:6px;font-family:"Zen Kaku Gothic New",sans-serif;letter-spacing:.05em}
+  .empty{padding:18px;text-align:center;font-size:13px;color:var(--sub);border:1px dashed var(--line);border-radius:14px}
+
+  footer{margin-top:44px;text-align:center;font-family:"Montserrat",sans-serif;font-size:10px;letter-spacing:.25em;color:#5d5763}
+
+  @media (prefers-reduced-motion:no-preference){
+    .profile,.sec{animation:up .6s both}
+    .sec:nth-of-type(2){animation-delay:.08s}
+    .sec:nth-of-type(3){animation-delay:.16s}
+    .sec:nth-of-type(4){animation-delay:.24s}
+    @keyframes up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="profile">
+    <div class="avatar"><div class="avatar-inner" id="avatar">
+      <img src="icon.jpg" alt="燿威" onerror="this.parentNode.innerHTML='<span class=&quot;mono&quot;>燿</span>'">
+    </div></div>
+    <h1 class="name">燿威</h1>
+    <p class="yomi">SHOI</p>
+    <p class="band">BLACK GROW BERRY</p>
+    <p class="bio">好きな物はビターチョコとDoleのりんごジュース<br>あ、名前の読み方は「しょうい」だよ！</p>
+  </header>
+
+  <section class="sec">
+    <h2 class="sec-title">LIVE</h2>
+    <div class="live" id="live"><div class="empty">読み込み中…</div></div>
+  </section>
+
+  <section class="sec">
+    <h2 class="sec-title">GOODS</h2>
+    <div class="links" id="cheki"></div>
+  </section>
+
+  <section class="sec">
+    <h2 class="sec-title">SNS</h2>
+    <div class="links" id="sns"></div>
+  </section>
+
+  <footer>© <span id="y"></span> 燿威 / BLACK GROW BERRY</footer>
+</div>
+
+<script>
+/* =========================================================
+   ここだけ編集すればOK
+   ========================================================= */
+
+// ライブ情報のスプレッドシート（「燿威リンクページ ライブ情報」の「ライブ」タブ）
+// 空にすると、下の FALLBACK_LIVES が表示される。
+const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/1XLF_eDXuLosutPokO0rGk0LC-Qi7dPUlmxU1e9J3A0k/gviz/tq?tqx=out:csv&sheet=%E3%83%A9%E3%82%A4%E3%83%96";
+
+// スプレッドシートが読めないときの予備（今のライブ情報）
+const FALLBACK_LIVES = [
+  { date: "2026-11-30", venue: "今池3STAR",   url: "https://eplus.jp/sf/detail/4612540001-P0030001", memo: "" },
+  { date: "2026-12-10", venue: "心斎橋JUZA",  url: "https://livepocket.jp/e/kj1210",                memo: "" },
+];
+
+const CHEKI = [
+  { label: "当日チェキ予約", sub: "bitfan",     url: "https://blackgrowberry.bitfan.id/q/5203", icon: "camera" },
+  { label: "チェキ通販",     sub: "BGB SHOP",   url: "https://bgb.theshop.jp/",                 icon: "bag" },
+];
+
+const SNS = [
+  { label: "X",              sub: "@SHOI_BGB",              url: "https://x.com/SHOI_BGB",                          icon: "x" },
+  { label: "Instagram",      sub: "@shoi_blackgrowberry",   url: "https://www.instagram.com/shoi_blackgrowberry/", icon: "ig" },
+  { label: "TikTok",         sub: "@SHOI_BGB",              url: "https://www.tiktok.com/@SHOI_BGB",               icon: "tt" },
+  { label: "BLACK GROW BERRY 公式X", sub: "@BLACKGROWBERRY", url: "https://x.com/BLACKGROWBERRY",                  icon: "x" },
+];
+
+/* ========================================================= */
+
+const ICONS = {
+  x:  '<svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>',
+  ig: '<svg viewBox="0 0 24 24"><path d="M12 7.2A4.8 4.8 0 1 0 12 16.8 4.8 4.8 0 0 0 12 7.2zm0 7.9a3.1 3.1 0 1 1 0-6.2 3.1 3.1 0 0 1 0 6.2zM17.3 5.6a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2zM16.5 2h-9A5.5 5.5 0 0 0 2 7.5v9A5.5 5.5 0 0 0 7.5 22h9a5.5 5.5 0 0 0 5.5-5.5v-9A5.5 5.5 0 0 0 16.5 2zm3.8 14.5a3.8 3.8 0 0 1-3.8 3.8h-9a3.8 3.8 0 0 1-3.8-3.8v-9a3.8 3.8 0 0 1 3.8-3.8h9a3.8 3.8 0 0 1 3.8 3.8z"/></svg>',
+  tt: '<svg viewBox="0 0 24 24"><path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"/></svg>',
+  camera: '<svg viewBox="0 0 24 24"><path d="M9 3 7.2 5H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-3.2L15 3H9zm3 15a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>',
+  bag: '<svg viewBox="0 0 24 24"><path d="M7 7V6a5 5 0 0 1 10 0v1h3l-1 15H5L4 7h3zm2 0h6V6a3 3 0 0 0-6 0v1z"/></svg>',
+  ticket: '<svg viewBox="0 0 24 24"><path d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3a3 3 0 0 0 0 6v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-3a3 3 0 0 0 0-6V6zm10 0v2h2V6h-2zm0 5v2h2v-2h-2zm0 5v2h2v-2h-2z"/></svg>',
+};
+
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
+
+function linkBtn(o){
+  return `<a class="btn" href="${esc(o.url)}" target="_blank" rel="noopener">
+    <span class="ico">${ICONS[o.icon] || ""}</span>
+    <span class="label"><b>${esc(o.label)}</b>${o.sub ? `<small>${esc(o.sub)}</small>` : ""}</span>
+    <span class="arrow">›</span></a>`;
+}
+document.getElementById("cheki").innerHTML = CHEKI.map(linkBtn).join("");
+document.getElementById("sns").innerHTML   = SNS.map(linkBtn).join("");
+document.getElementById("y").textContent   = new Date().getFullYear();
+
+/* ---------- ライブ ---------- */
+
+// 日本時間の「今日」（0時）
+function todayJST(){
+  const p = new Intl.DateTimeFormat("en-CA",{timeZone:"Asia/Tokyo",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());
+  return new Date(p + "T00:00:00");
+}
+
+// "2026-11-30" / "2026/11/30" / "11/30" を日付に
+function parseDate(s){
+  s = String(s || "").trim().replace(/[年月]/g,"/").replace(/日/g,"").replace(/-/g,"/");
+  const a = s.split("/").map(n => parseInt(n,10)).filter(n => !isNaN(n));
+  if (a.length === 3){
+    if (a[0] > 31) return new Date(a[0], a[1]-1, a[2]);   // 2026/11/30
+    if (a[2] > 31) return new Date(a[2], a[0]-1, a[1]);   // 11/30/2026
+    return null;
+  }
+  if (a.length === 2){
+    const t = todayJST();
+    let d = new Date(t.getFullYear(), a[0]-1, a[1]);
+    if (d < new Date(t.getFullYear(), t.getMonth()-2, 1)) d.setFullYear(d.getFullYear()+1); // 年をまたぐ場合
+    return d;
+  }
+  return null;
+}
+
+// シンプルなCSVパーサ（ダブルクォート対応）
+function parseCSV(text){
+  const rows = []; let row = [], cur = "", q = false;
+  for (let i = 0; i < text.length; i++){
+    const c = text[i];
+    if (q){
+      if (c === '"' && text[i+1] === '"'){ cur += '"'; i++; }
+      else if (c === '"') q = false;
+      else cur += c;
+    } else if (c === '"') q = true;
+    else if (c === ","){ row.push(cur); cur = ""; }
+    else if (c === "\n" || c === "\r"){
+      if (c === "\r" && text[i+1] === "\n") i++;
+      row.push(cur); rows.push(row); row = []; cur = "";
+    } else cur += c;
+  }
+  if (cur !== "" || row.length){ row.push(cur); rows.push(row); }
+  return rows;
+}
+
+// 1行目は見出し（日付, 会場, チケットURL, メモ）として読み飛ばす
+function rowsToLives(rows){
+  return rows.slice(1)
+    .map(r => ({ date: r[0], venue: r[1], url: r[2], memo: r[3] }))
+    .filter(l => l.date && l.venue);
+}
+
+function renderLives(list){
+  const W = ["日","月","火","水","木","金","土"];
+  const t = todayJST();
+  const lives = list
+    .map(l => ({ ...l, d: parseDate(l.date) }))
+    .filter(l => l.d && l.d > t)   // ライブ当日になったら外して、次のライブを出す
+    .sort((a,b) => a.d - b.d)
+    .slice(0, 2);   // 直近2本だけ載せる
+
+  const el = document.getElementById("live");
+  if (!lives.length){
+    el.innerHTML = '<div class="empty">次のライブは近日発表！</div>';
+    return;
+  }
+  el.innerHTML = lives.map((l,i) => {
+    const days = Math.round((l.d - t) / 86400000);
+    const dayTxt = days === 1 ? "明日" : `あと${days}日`;
+    const head = i === 0
+      ? `<span class="badge">NEXT LIVE</span><span class="badge days">${dayTxt}</span>`
+      : "";
+    const inner = `
+      <span class="date"><div class="md">${l.d.getMonth()+1}/${l.d.getDate()}</div><div class="wd">${W[l.d.getDay()]}</div></span>
+      <span class="label">${head}<b>${esc(l.venue)}</b><small>${esc(l.memo || (l.url ? "チケットはこちら" : "詳細は後日"))}</small></span>
+      <span class="arrow">›</span>`;
+    return l.url
+      ? `<a class="btn${i===0?" next":""}" href="${esc(l.url)}" target="_blank" rel="noopener">${inner}</a>`
+      : `<a class="btn${i===0?" next":""}">${inner}</a>`;
+  }).join("");
+}
+
+(async () => {
+  if (!SHEET_CSV_URL){ renderLives(FALLBACK_LIVES); return; }
+  try{
+    const res = await fetch(SHEET_CSV_URL + (SHEET_CSV_URL.includes("?") ? "&" : "?") + "t=" + Date.now());
+    if (!res.ok) throw new Error(res.status);
+    const lives = rowsToLives(parseCSV(await res.text()));
+    renderLives(lives.length ? lives : FALLBACK_LIVES);
+  }catch(e){
+    renderLives(FALLBACK_LIVES);
+  }
+})();
+</script>
+</body>
+</html>
